@@ -31,4 +31,5 @@ jobs:
         run : | 
           cd build 
           cd hello_world_application
-          ls
+          ./hello_world
+          
