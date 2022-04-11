@@ -32,4 +32,13 @@ jobs:
           cd build 
           cd hello_world_application
           ./hello_world
+      
+      - name: zapusk solver
+        run : | 
+          cd build 
+          cd solver_application
+          ./solver
+          1 2 1 
+         
+      
           
