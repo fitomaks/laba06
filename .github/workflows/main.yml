@@ -38,6 +38,7 @@ jobs:
           cd build 
           cd solver_application
           ./solver 1 2 1
+          ./solver 5 3 2 
          
       
           
