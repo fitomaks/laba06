@@ -21,11 +21,23 @@ jobs:
       - name: Git clone my repo
         uses: actions/checkout@v1
       
-      - name: List of repo
+      - name: build 
         run : |
-          ls
-          rm -rf build
-          ls
+          mkdir build
+          cd build
+          cmake ..
+          make   
+      - name: zapusk hello world
+        run : | 
+          cd build 
+          cd hello_world_application
+          ./hello_world
+      
+      - name: zapusk solver
+        run : | 
+          cd build 
+          cd solver_application
+          ./solver 1 2 1
+         
+      
           
-      - name: Hello world
-        run : echo Hello world! 
