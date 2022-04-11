@@ -3,7 +3,7 @@
 #include "formatter_ex.h"
 #include "solver.h"
 
-int main(int argc,char* argv)
+int main(int argc,char* argv[])
 {
     float a = int(*argv[1]) - 48;
     float b = int(*argv[2]) - 48;
