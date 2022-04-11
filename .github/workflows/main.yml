@@ -37,8 +37,7 @@ jobs:
         run : | 
           cd build 
           cd solver_application
-          ./solver
-          echo 1 2 1
+          ./solver 1 2 1
          
       
           
