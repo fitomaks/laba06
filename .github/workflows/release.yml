@@ -25,7 +25,6 @@ jobs:
             Upload archive and binary files for uploading
           draft: false
           prerelease: false
-
   Archives:
     needs: Make_GitHub_Release
     runs-on: ubuntu-latest
