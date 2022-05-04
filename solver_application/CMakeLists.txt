@@ -11,4 +11,5 @@ target_include_directories(${PROJECT_NAME}
                            ../solver_lib)
 target_link_libraries(${PROJECT_NAME} formatter_ex solver_lib)
 
+include(pack.cmake)
                               

@@ -1,0 +1,24 @@
+include(InstallRequiredSystemLibraries)
+set (CPACK_PACKAGE_NAME "solver")
+
+set(CPACK_PACKAGE_VERSION_MAJOR 1)
+set(CPACK_PACKAGE_VERSION_MINOR 0)
+set(CPACK_PACKAGE_VERSION_PATCH 0)
+
+option(GENERATOR "")
+
+if(${GENERATOR} MATCHES BIN)
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "fitomaks")
+        install(TARGETS solver DESTINATION bin)
+endif()
+
+if(${GENERATOR} MATCHES ARC)
+	install(FILES equation.cpp
+	              ../formatter_lib/formatter.cpp
+		      ../formatter_ex_lib/formatter_ex.cpp
+		      ../solver_lib/solver.cpp
+		DESTINATION code)
+	install(TARGETS formatter_ex solver_lib LIBRARY DESTINATION lib)
+endif()
+
+include(CPack)
