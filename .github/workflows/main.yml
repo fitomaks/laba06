@@ -27,12 +27,6 @@ jobs:
           cd build
           cmake ..
           make   
-      - name: zapusk hello world
-        run : | 
-          cd build 
-          cd hello_world_application
-          ./hello_world
-      
       - name: zapusk solver
         run : | 
           cd build 
