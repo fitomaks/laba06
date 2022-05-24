@@ -85,7 +85,7 @@ jobs:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with :   
            upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-           asset_path: ./cmake/solver-1.0.0-Linux.deb
+           asset_path: ./build/solver-1.0.0-Linux.deb
            asset_name: Solver_app.deb
            asset_content_type: code/deb
            
@@ -96,7 +96,7 @@ jobs:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with :   
            upload_url: ${{ needs.Make_GitHub_Release.outputs.upload_url }}
-           asset_path: ./cmake/solver-1.0.0-Linux.rpm
+           asset_path: ./build/solver-1.0.0-Linux.rpm
            asset_name: Solver_app.rpm
            asset_content_type: code/rpm
            
