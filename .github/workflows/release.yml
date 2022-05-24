@@ -74,7 +74,7 @@ jobs:
        - name : build system 
          run : |
            mkdir build && cd build 
-           cmake -DGENERATOR=BIN 
+           cmake -DGENERATOR=BIN ..
            make 
            cpack -G DEB 
            cpack -G RPM
